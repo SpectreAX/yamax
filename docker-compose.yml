@@ -1,0 +1,14 @@
+services:
+  yamax:
+    build: .
+    container_name: yamax
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./config:/config
+      - .:/app
+    env_file:
+      - .env
+    environment:
+      - CONFIG_PATH=/config/config.yaml
+    restart: unless-stopped
