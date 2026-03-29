@@ -58,6 +58,6 @@ curl http://localhost:8000/health
 在 `main.py` 顶部修改 `MODEL` 变量：
 
 ```python
-MODEL = "gemini-2.0-flash"        # 默认，速度快，免费额度充足
-MODEL = "gemini-2.5-pro-preview"  # 推理更强，适合复杂配置修改
+MODEL = "gemini-3-flash-preview"        # 默认，速度快，免费额度充足
+MODEL = "gemini-3.1-pro-preview"  # 推理更强，适合复杂配置修改
 ```
